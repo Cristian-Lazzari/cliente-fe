@@ -180,13 +180,29 @@ export default {
         active-class="active-link"
         >Ordina d'Asporto</router-link
       >
+      <a
+        v-if="!state.infomenu && !tavoli"
+        href="tel:3663694915"
+        class="nav-link"
+        active-class="active-link"
+       
+        >Prenota un tavolo</a
+      >
+      <router-link
+        @click="state.actvPage = 2; state.sideMenuValue = 0"
+        v-if="!state.infomenu && tavoli"
+        :to="{ name: 'prenota' }"
+        class="nav-link"
+        active-class="active-link"
+        >Prenota un tavolo</router-link
+      >
       <router-link
         @click="state.actvPage = 2; state.sideMenuValue = 0"
         v-if="!state.infomenu"
         :to="{ name: 'chi-siamo' }"
         class="nav-link"
         active-class="active-link"
-        >about</router-link
+        >Chi Siamo?</router-link
       >
       <router-link
         @click="state.actvPage = 2; state.sideMenuValue = 0"
@@ -194,7 +210,7 @@ export default {
         :to="{ name: 'contatti' }"
         class="nav-link"
         active-class="active-link"
-        >contatti</router-link
+        >Contatti</router-link
       >
 
 
