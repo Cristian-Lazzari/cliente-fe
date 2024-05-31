@@ -89,8 +89,8 @@
     <div v-if="set" class="main-about">
       <div class="back" @click="set=0; choice = 0">indietro</div>
       <div class="other" @click="other">{{ other(set) }}</div>
-      <h1 v-if="set == 2 ">LA NOSTRA PIZZERIA</h1>
-      <h1 v-if="set == 1" >IN VIAGGIO CON LEO</h1>
+      <h1 v-if="set == 2 ">Storia del nostro Locale</h1>
+      <h1 v-if="set == 1" >Scopri news, eventi e promozioni</h1>
       <div class="post-container">
         <div v-for="post in getset()" :key="post.id" class="post" >
           <img class="image" :src=" state.getImageUrl(post.image)" alt="">

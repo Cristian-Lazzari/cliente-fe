@@ -28,18 +28,18 @@
   
         <div class="contact">
           <div class="cnt-name">email</div>
-          <a href="mailto:96leonardorocchetti@gmail.com" class="cnt">96leonardorocchetti@gmail.com</a>
+          <a href="mailto:@gmail.com" class="cnt">latuamail@gmail.com</a>
         </div>    
         <div class="contact">
           <div class="cnt-name">telefono</div>
-          <a href="tel:3663694915" class="cnt">+39 3663694915</a>
+          <a href="tel:3333444555" class="cnt">+39 3333444555</a>
         </div>    
       </div>
   
       <div class="map">
         <h1>Dove trovarci</h1>
   
-        <a href="https://www.google.com/maps/place/Pizzeria+Il+Capriccio+di+Leo/@43.5948219,13.2980245,17z/data=!3m1!4b1!4m6!3m5!1s0x132d9dbad592a331:0x349d7e3dd6b01160!8m2!3d43.5948219!4d13.3005994!16s%2Fg%2F11dxlc9msx?entry=ttu">
+        <a href="https://www.google.com/maps/">
           <div class="ov"></div>
           <p>tocca per aprire google maps</p>
           <img draggable="false" src="../assets/img/googlemaps.png"  alt="">

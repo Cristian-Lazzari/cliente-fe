@@ -18,7 +18,7 @@
     <div class="btn-menu" @click="state.openside">Menu</div>
     <div class="cont">
       <div class="center">
-        <img src="../assets/img/logoblack.png" alt="" class="logo">
+        <img src="../assets/img/logo.png" alt="" class="logo">
         
 
       </div>

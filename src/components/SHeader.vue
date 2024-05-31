@@ -29,7 +29,7 @@ export default {
 <template>
   <header v-if="!state.sideMenuValue && state.actvPage!== 1" class="hd">
     <div class="btn-menu" @click="state.openside">menu</div>
-    <img src="../assets/img/logoblack.png" alt="" class="logo">
+    <img src="../assets/img/logo.png" alt="" class="logo">
     <p v-if=" ferie"> Siamo chiusi dal {{fromto[0] }} al {{ fromto[1] }}</p>
   </header>
 
@@ -37,7 +37,7 @@ export default {
     <div class="btn-menu" @click="state.openside">menu</div>
     <div class="overlay">
 
-      <img src="../assets/img/logoblack.png" alt="" class="logo">
+      <img src="../assets/img/logo.png" alt="" class="logo">
     </div>
 
     <p v-if=" ferie"> Siamo chiusi dal {{fromto[0] }} al {{ fromto[1] }}</p>
@@ -86,7 +86,7 @@ header {
   }
   img{
     width: clamp(35px, 15%, 65px);
-    filter: invert(100);
+    
     
   }
 }
@@ -135,7 +135,7 @@ header {
 
     img{
       height: 100%;
-      filter: invert(100);
+      
       
     }
   }
