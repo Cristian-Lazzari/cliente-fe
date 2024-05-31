@@ -67,7 +67,7 @@ export default {
               Parte proprio dal pasto perfetto 😎
             </span>
           </div>
-          <router-link :to="{ name: 'prenota' }" class="btn" v-if="asporto">Prenota asporto</router-link>
+          <router-link :to="{ name: 'prenota' }" @click="state.actvPage = 3" class="btn" v-if="asporto">Prenota asporto</router-link>
           <a href="tel:3663694915" class="btn" v-if="!asporto">Prenota asporto</a>
         </div>
       </div>
@@ -90,7 +90,7 @@ export default {
           <router-link :to="{ name: 'menu' }" @click="state.actvPage = 2" class="btn">Menù</router-link>
         </div>
       </div>
-      <!-- <div class="par par-3" id="par3" v-if="tavoli">
+      <div class="par par-3" id="par3" v-if="tavoli">
         <div class="overlay">
           <div class="arrow">
             <a @click="actvpage" href="#par1">
@@ -125,7 +125,7 @@ export default {
             >Prenota un tavolo</router-link
           >
         </div>
-      </div>      -->
+      </div>     
     </div>
   </div>
 </template>

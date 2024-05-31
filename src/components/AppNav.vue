@@ -58,6 +58,21 @@ export default {
       >
       <router-link
         @click="state.actvPage = 2"
+        v-if="tavoli"
+        :to="{ name: 'prenotaServizio' }"
+        class="nav-link"
+        active-class="active-link"
+        >Prenota un tavolo</router-link
+      >
+      <a
+        v-if="!tavoli"
+        href="tel:3663694915"
+        class="nav-link"
+        active-class="active-link"
+        >Prenota un tavolo</a
+      >
+      <router-link
+        @click="state.actvPage = 2"
         :to="{ name: 'chi-siamo' }"
         class="nav-link"
         active-class="active-link"

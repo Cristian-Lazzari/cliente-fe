@@ -30,7 +30,7 @@ export default {
   <header v-if="!state.sideMenuValue && state.actvPage!== 1" class="hd">
     <div class="btn-menu" @click="state.openside">menu</div>
     <img src="../assets/img/logoblack.png" alt="" class="logo">
-    <p v-if=" ferie">altro Siamo chiusi dal {{fromto[0] }} al {{ fromto[1] }}</p>
+    <p v-if=" ferie"> Siamo chiusi dal {{fromto[0] }} al {{ fromto[1] }}</p>
   </header>
 
   <div v-if="!state.sideMenuValue && state.actvPage == 1" class="header-home">
@@ -40,7 +40,7 @@ export default {
       <img src="../assets/img/logoblack.png" alt="" class="logo">
     </div>
 
-    <p v-if=" ferie">home Siamo chiusi dal {{fromto[0] }} al {{ fromto[1] }}</p>
+    <p v-if=" ferie"> Siamo chiusi dal {{fromto[0] }} al {{ fromto[1] }}</p>
   </div>
 </template>
 <!-- 
